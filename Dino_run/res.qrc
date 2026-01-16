@@ -1,0 +1,45 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/background/background_1.png</file>
+        <file>res/background/background_2.png</file>
+        <file>res/dino/dino1/dead.png</file>
+        <file>res/dino/dino1/idle.png</file>
+        <file>res/dino/dino1/jump.png</file>
+        <file>res/dino/dino1/move.png</file>
+        <file>res/dino/dino2/dash.png</file>
+        <file>res/dino/dino2/dead.png</file>
+        <file>res/dino/dino2/idle.png</file>
+        <file>res/dino/dino2/jump.png</file>
+        <file>res/dino/dino2/move.png</file>
+        <file>res/track/track1.png</file>
+        <file>res/track/track2.png</file>
+        <file>res/track/track3.png</file>
+        <file>res/track/track4.png</file>
+        <file>res/track/track5.png</file>
+        <file>res/track/track6.png</file>
+        <file>res/track/track7.png</file>
+        <file>res/track/track8.png</file>
+        <file>res/track/track9.png</file>
+        <file>res/track/track10.png</file>
+        <file>res/track/track11.png</file>
+        <file>res/track/track12.png</file>
+        <file>res/trap/barnacle_attack_a.png</file>
+        <file>res/trap/barnacle_attack_b.png</file>
+        <file>res/trap/bee_a.png</file>
+        <file>res/trap/bee_b.png</file>
+        <file>res/trap/frog_idle.png</file>
+        <file>res/trap/frog_jump.png</file>
+        <file>res/trap/slime_spike_walk_a.png</file>
+        <file>res/trap/slime_spike_walk_b.png</file>
+        <file>res/trap/snail_walk_a.png</file>
+        <file>res/trap/snail_walk_b.png</file>
+        <file>res/dino/dino3/dash.png</file>
+        <file>res/dino/dino3/dead.png</file>
+        <file>res/dino/dino3/idle.png</file>
+        <file>res/dino/dino3/jump.png</file>
+        <file>res/dino/dino3/move.png</file>
+        <file>res/dino/dino1/dash.png</file>
+        <file>res/gameBase/title.png</file>
+        <file>res/gameBase/gameicon.png</file>
+    </qresource>
+</RCC>

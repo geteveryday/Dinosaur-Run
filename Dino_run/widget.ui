@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>640</width>
+    <height>320</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>640</width>
+    <height>320</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>恐龙快跑彩色版</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/res/gameBase/gameicon.png</normaloff>:/res/gameBase/gameicon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Widget{
+border-image: url(:/res/background/background_2.png);
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widgetTitle" native="true">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>100</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>264</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="minimumSize">
+         <size>
+          <width>106</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>106</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/res/gameBase/title.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>264</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widgetSelect" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>60</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnStart">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btnStart {
+    /* 字体相关 */
+    font-family: &quot;SimHei&quot;; /* 黑体，也可根据需求换其他像素风格字体 */
+    font-size: 24px; /* 字体大小 */
+    font-weight: bold; /* 字体加粗 */
+    color: white; /* 字体颜色 */
+
+    /* 按钮其他样式（可选，若需要和界面更协调） */
+    background-color: #22cc22; /* 按钮背景色，与界面中绿色匹配 */
+    border-radius: 20px; /* 圆角 */
+    padding: 10px 30px; /* 内边距 */
+    border: 4px solid #11aa11; /* 边框 */
+}
+
+/* 开始按钮悬浮状态字体样式（可选，若要改变悬浮时字体效果） */
+QPushButton#btnStart:hover {
+    color: #ffff00; /* 悬浮时字体变黄，可自行调整 */
+    background-color: #33dd33; /* 悬浮时背景色变化 */
+    border: 4px solid #22bb22; /* 悬浮时边框变化 */
+}
+
+/* 开始按钮按下状态字体样式（可选，若要改变点击时字体效果） */
+QPushButton#btnStart:pressed {
+    color: #dddddd; /* 按下时字体颜色变浅，可自行调整 */
+    background-color: #11bb11; /* 按下时背景色变化 */
+    border: 4px solid #00aa00; /* 按下时边框变化 */
+    padding: 12px 30px 8px 30px; /* 点击时轻微位移，模拟按下效果 */
+}</string>
+        </property>
+        <property name="text">
+         <string>开始</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSetting">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btnSetting {
+    font-family: &quot;SimHei&quot;;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+
+    background-color: #2288ff; /* 蓝色背景，匹配界面色调 */
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: 4px solid #1177ee;
+}
+
+QPushButton#btnSetting:hover {
+    color: #ffff00;
+    background-color: #3399ff;
+    border: 4px solid #2288ee;
+}
+
+QPushButton#btnSetting:pressed {
+    color: #dddddd;
+    background-color: #1177dd;
+    border: 4px solid #0066dd;
+    padding: 12px 30px 8px 30px;
+}</string>
+        </property>
+        <property name="text">
+         <string>设置</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnHelp">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btnHelp {
+    font-family: &quot;SimHei&quot;;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+
+    background-color: #3366ff; /* 蓝色背景，区分帮助功能 */
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: 4px solid #2255ee;
+}
+
+QPushButton#btnHelp:hover {
+    color: #ffff00; /* 保持hover时的黄色文字效果 */
+    background-color: #4477ff;
+    border: 4px solid #3366dd;
+}
+
+QPushButton#btnHelp:pressed {
+    color: #dddddd;
+    background-color: #2255ee;
+    border: 4px solid #1144dd;
+    padding: 12px 30px 8px 30px; /* 保持按压时的位移效果 */
+}</string>
+        </property>
+        <property name="text">
+         <string>帮助</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnExit">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btnExit {
+    font-family: &quot;SimHei&quot;;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+
+    background-color: #ff3333; /* 红色背景，匹配界面色调 */
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: 4px solid #ee2222;
+}
+
+QPushButton#btnExit:hover {
+    color: #ffff00;
+    background-color: #ff4444;
+    border: 4px solid #dd3333;
+}
+
+QPushButton#btnExit:pressed {
+    color: #dddddd;
+    background-color: #ee2222;
+    border: 4px solid #dd1111;
+    padding: 12px 30px 8px 30px;
+}</string>
+        </property>
+        <property name="text">
+         <string>退出</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widgetRun" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>160</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>160</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
